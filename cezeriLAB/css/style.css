@@ -4,8 +4,7 @@
 
 }
 .custom-card-project{
-  background-color: rgba(0, 0, 0, 0.897);
-color: #fff;
+  background-color: rgba(0, 0, 0, 0.897); 
      -moz-transition: box-shadow 0.4s ease;
    -webkit-transition: box-shadow 0.4s ease;
    -o-transition: box-shadow 0.4s ease;
@@ -20,8 +19,7 @@ color: #fff;
    box-shadow: 0 14px 28px rgba(4, 0, 255, 0.50), 2px 4px 10px 4px rgba(4, 0, 255, 0.50);
 
 }
-.custom-card-project:hover {
-  background-color: rgba(0, 0, 0, 1);
+.custom-card-project:hover { 
        box-shadow: 0 14px 28px rgba(122, 226, 120, 0.7), 2px 4px 10px 4px rgba(122, 226, 120, 0.6);
        transition:  .2s;
 
@@ -113,8 +111,7 @@ background-color: rgba(4, 0, 255, 0.3);
 
 
 .son-Projerler{
-  height:auto;
-  background-color: black;
+  height:auto; 
 
 }
  
@@ -126,11 +123,11 @@ transition: .6s;
 }
 .Mark:hover{
   background-color: rgba(122, 226, 120, 0.8);
-transition: .6s;
+transition: .5s;
 }
 .Mark:hover ~ .Mark2{
   background-color: rgba(4, 0, 255, 0.4);
-transition: .6s;
+transition: .5s;
 }
 .Mark2{
   background-color: rgba(122, 226, 120, 0.5);
@@ -300,6 +297,26 @@ transition: 0.6s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.5s;
 }
+.dikdortgen-project{
+height: auto; width: auto; 
+  position: relative;
+  -moz-transition: box-shadow 0.4s ease;
+  -webkit-transition: box-shadow 0.4s ease;
+  -o-transition: box-shadow 0.4s ease;
+  -ms-transition: box-shadow 0.4s ease;
+  transition: box-shadow 0.4s ease;
+  -moz-box-shadow: 0 35px 30px -30px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 35px 30px -30px rgba(0,0,0,0.4);
+  -o-box-shadow: 0 35px 30px -30px rgba(0,0,0,0.4);
+  -ms-box-shadow: 0 35px 30px -30px rgba(0,0,0,0.4);
+  box-shadow: 0 35px 30px -30px rgba(0,0,0,0.4);
+  transition: .5s ease;
+  box-shadow: 0 14px 28px rgba(4, 0, 255, 0.171), 2px 4px 10px 4px rgba(4, 0, 255, 0.242);
+}
+.dikdortgen-project:hover{
+  box-shadow: 0 14px 28px rgba(122, 226, 120, 0.4), 2px 4px 10px 4px rgba(122, 226, 120, 0.4);
+  transition:  .5s;
+  }
 .dikdortgen2{  
   height: auto;
   width: auto; 
@@ -311,7 +328,7 @@ ol.carousel-indicators {
   bottom: 0px;
   margin: 0 0 10px 0;
   left: 0;
-  right: 50vw;
+  right: 50vw; 
   width: auto;
 }
 
@@ -335,7 +352,12 @@ ol.carousel-indicators li.active {
   background: rgba(3, 6, 170, 0.651);
   transition:.5s;
 }
+ 
 .imglogo{
   width:12vw;
   padding: 2vh;
+}
+.project-title{
+  color:black;
+  
 }
