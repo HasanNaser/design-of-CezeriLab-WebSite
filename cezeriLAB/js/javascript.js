@@ -1,3 +1,16 @@
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar.ana");
+    $nav.toggleClass('scrolled', $(this).scrollTop() >  300);
+  });
+});
+
+$(function(){
+  $(document).scroll(function(){
+    var $nav2=$(".alttakiNavbar");
+    $nav2.toggleClass('scrolled2',$(this).scrollTop() < 3100);
+  });
+});
 $(document).ready(function(){
   $(".panel-heading").hover(
     function () {
