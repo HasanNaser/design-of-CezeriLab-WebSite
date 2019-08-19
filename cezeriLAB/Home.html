@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"    rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
           <!-- Font Awesome -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -17,6 +17,7 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
       <!-- Material Design Bootstrap -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- JQuery -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <!-- Bootstrap tooltips -->
@@ -26,7 +27,7 @@
       <!-- MDB core JavaScript -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
 
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.css" integrity="sha256-jrNAqq4Gy0Gg2b6G6l0n57dPr6N1twCn+JMqY8x3l88=" crossorigin="anonymous" />
 
 
       <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
@@ -34,7 +35,10 @@
 
 
 
-
+      <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 
 
@@ -42,13 +46,12 @@
   </head>
 
 
-<body>
-
-      <div class=" image-background1 " >
-        <div id="particles-js"></div>
-
-        <!-- stats - count particles -->
-
+<body >
+<div data-aos="fade-down" >
+     
+      <div class="main-section"data-aos="fade-right" >
+          
+        <div id="particles-js"></div> 
         <script  src="js/scriptforPartical.js"></script>
           <!-- Card deck
           <nav class="navbar  fixed-bottom  navbar-expand-sm py-md-0 navbar-dark   " style="background-color:rgba(0, 0, 0, 0.80);" >
@@ -65,46 +68,53 @@
             </ul>
           </nav>
           -->
-          <!-- video background
-          <div style="position:absolute;">
-            <video src="video/cezeri.mp4" autoplay loop muted poster="posterimage.jpg" style="width:100%;">
+           
+          
+           
 
-            </video>
-          </div>
-          -->
-
-          <nav class="ana navbar fixed-top  navbar-expand-md navbar-dark ">
+          <nav class="ana navbar fixed-top navbar-expand-md navbar-dark ">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                  <img src="foto/icons/logo.png" width="200" height="" class="d-inline-block align-top" alt="CezeriLab">
-                </a>
-              </div>
-
-              <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-                <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item" ><a class="btn btn-outline-Home btn-outline btn-lg " href="#"> <i class="fas fa-home"></i> Anasayfa</a></li>
-                  <li class="s nav-item" ><a class="btn btn-outline-other " href="#">  Hakkımızda</a></li>
-                  <li class="s nav-item" ><a class="btn btn-outline-other " href="#">   Projerler</a></li>
-                  <li class="s nav-item" ><a class="btn btn-outline-other " href="#">  Servisler</a></li>
-                  <li class="s nav-item" ><a class="btn btn-outline-other " href="#">  İletişim</a></li>
-                </ul>
-
-              </div>
+              </button>  
+              <div class="collapse navbar-collapse " id="navbarTogglerDemo01"> 
+                <ul class="nav navbar-nav   " style="margin: 0 auto;">
+                  <li class="nav-item" ><a class="btn btn-outline-Home btn-outline   " href="#"> <i class="fas fa-home"></i> Anasayfa</a></li>
+                  <li class=" nav-item" ><a class="btn btn-outline-other " href="#about">  Hakkımızda</a></li>
+                  <li class=" nav-item" ><a class="btn btn-outline-other " href="#sonProjerler-section">   Projerler</a></li>
+                  <li class=" nav-item" ><a class="btn btn-outline-other " href="#Servisler">  Servisler</a></li>
+                  <li class=" nav-item" ><a class="btn btn-outline-Home" href="#iletisim">  İletişim</a></li>
+                  <li class="nav-item dropdown"> 
+                  </li>
+                </ul> 
+              </div> ""
+              <!-- Basic dropdown -->
+                     <a class="nav-link  dropdown-toggle btn btn-outline-other" href="#" style="color: #fff" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-tr"> </span> Turkish</a>
+                    <div class="dropdown-menu  btn ana " style="  right:3vw;left: auto;" aria-labelledby="dropdown09">
+                        <a class="dropdown-item btn btn-outline-other" href="#fr"><span class="flag-icon flag-icon-us"> </span>  English</a>
+                        <a class="dropdown-item btn btn-outline-other" href="#it"><span class="flag-icon flag-icon-it"> </span>  Kurdî </a>
+                        <a class="dropdown-item btn btn-outline-other" href="#ru"><span class="flag-icon flag-icon-sa"> </span>  العربية </a>
+                    </div>
+              
+<!-- Basic dropdown -->
             </div>
           </nav>
  
-          <div class="sayfa1-orta ">
-            <a class="btn btn-outline-cezerilab" disabled href="#">  CezeriLab</a>
-            <p style="font-size:3vw; transition:0.6s;color:#fff" href="#"> Cezeri Lab Teknolojileri  <a href="" class="typewrite btn btn-outline-sologan" data-period="2000" data-type='[ "ROBOTİK", "MEKANİK", "YAZILIM" ]'> </a> çözümleri ...       </p>
-          </div>
-      </div>
-      
+          <div class="sayfa-orta " >
+              <div class="btn btn-outline-cezerilab">
+                  <a class="" href="#" data-aos="zoom-in-right" style="transition-duration: 2000ms;">   
+                      <img src="foto/icons/logo.png" width="100%"   alt="CezeriLab"> 
+                  </a>
+              </div> 
+            <div class="videoo">
+                <iframe width="560" height="315" style="transition: .5s;" src="https://www.youtube.com/embed/E7GyQn-8sNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <p style="font-size:2vw; transition:0.6s;color:#fff; font-family: 'Share Tech Mono', monospace; " class="s" href="#"> Cezeri Lab Teknolojileri  <a style=" " href="" class="typewrite btn sologan" data-period="2000" data-type='[ "ROBOTİK", "MEKANİK", "YAZILIM" ]'> </a> çözümleri ...       </p>
+        </div>
+      </div> 
       <!-- finish kısım 1-->
-      <div class="son-Projerler">
+      <div id="sonProjerler-section" class="sonProjerler-section" data-aos="fade-down">
             <!--
                 <canvas id="canvas" style=" position:absolute; background-image: linear-gradient(360deg, #ffffff 60%, #009cfd 100%);"></canvas>
                 <script type="text/javascript">
@@ -295,7 +305,7 @@
                 <div class="container ">
                     <div class="row">
                       <div  class="carousel  slide " id="carousel-testimonials-03" data-ride="carousel">
-                          <ol class="carousel-indicators" style="position: absolute;bottom: 80vh;margin: 0 0 10px 0;left: 75vw;right: 0;width: auto;">
+                          <ol class="carousel-indicators" style="position: absolute;bottom: 80vh;margin: 0 0 10px 0;left: 75vw;right: 0; top:0px;width: auto;">
                               <li data-target="#carousel-testimonials-03" data-slide-to="0" class="active"></li>
                               <li data-target="#carousel-testimonials-03" data-slide-to="1"></li>
                               <li data-target="#carousel-testimonials-03" data-slide-to="2"></li>
@@ -305,13 +315,15 @@
                                 <div class="card ">
                                     <div class="row">
                                       <div class="col-md-8">
-                                        <img src="foto/back2.jpg" class="card-img"  style="clip-path:polygon(20% 0,100% 20px,100% 100%,0 100%)" alt="...">
+                                        <img src="Projeler/fıstık-sınıflandırma/el-cezeri-ekibi-harran-teknopark-odul-aldi-3.jpg" class="card-img"  style="clip-path:polygon(20% 0,100% 20px,100% 100%,0 100%)" alt="...">
                                       </div>
                                       <div class="col-md-4">
                                         <div class="card-body">
-                                        <a class="project-title" href=""><h5 class="card-title text-left" style="font-size: 36px; margin: 0 0 24px; ">Fıstık Sınıflandırma Makinesi</h5></a>
-                                          <p class="card-text text-left" style="font-size: 19px;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <a class="project-title" href="Projeler/fıstık-sınıflandırma/fısıtık_sınıflandırma_makinesi.html" target="_blank"><h5 class="card-title text-left" style="font-size: 36px; margin: 0 0 24px; ">Fıstık Sınıflandırma Makinesi</h5></a>
+                                          <p class="card-text text-left" style="font-size: 19px;">Harran Üniversitesinde “1.Harran Uluslararası Ar-Ge Proje Pazarı ” düzenlendi. Şanlıurfa Teknokent’de düzenlenen Harran I. Uluslararası AR-GE Proje Pazarına Üniversitemizi temsilen Mühendislik Fakültesinden Mühendislik Fakültesinden Yrd. Doç. Dr. Musa Ataş ve El-Cezeri Sibernetik ve Robotik Laboratuvarı ekibi katıldı. .</p>
                                           <p class="card-text text-left"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                      
+                                         
                                         </div>
                                       </div>
                                     </div>
@@ -376,7 +388,7 @@
 
       </div>
       <!-- finish kısım 2-->
-      <div class="hakkimizda Hizmetlerimiz" >
+      <div id="about" class="hakkimizda Hizmetlerimiz" data-aos="fade-down" style="transition-duration: 1000ms;" >
         <div class="view" style="background-color: black;">
             <div style="position:absolute;  width:100%; ">
                 <video src="video/cezeri.mp4" autoplay loop muted poster="posterimage.jpg" style="width:100%;"></video>
@@ -399,76 +411,110 @@
                     Türkiye bilişim sektörünün dinamik firmaları arasında büyümeye devam eden Agersoft Bilişim 2009 yılında bilişim sektörüne hizmet vermeye başlamıştır. Kurulduğu günden bu yana büyüme trendini sürdüren ve dünyadaki yenilikleri takip eden Agersoft Bilişim, gelişmelere bağlı olarak yıllar içerisinde yapısını pazarın gerekliliklerine göre olgunlaştırmaya devam etmektedir..</a>
                     <mark class="Mark font-weight-bolder text-capitalize">Bu yıl dördüncüsü düzenlenecek olan Uluslararası
                       El Cezeri İnovasyon ve Proje Pazarı (UCİP) bilimsel
-                        etkinliği yine Siirt Üniversitesi ev sahipliğinde yapılacaktır.
+                         etkinliği yine Siirt Üniversitesi ev sahipliğinde yapılacaktır.
                         Bu bağlamda başta bölge üniversiteleri olmak üzere Türkiyedeki
                       tüm üniversiteler ve yurtdışındaki üniversitelerden öğrencilerin,
                         akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
                       etkinliğine katılmaları beklenmektedir.
+                      El Cezeri İnovasyon ve Proje Pazarı (UCİP) bilimsel
+                      etkinliği yine Siirt Üniversitesi ev sahipliğinde yapılacaktır.
+                      Bu bağlamda başta bölge üniversiteleri olmak üzere Türkiyedeki
+                    tüm üniversiteler ve yurtdışındaki üniversitelerden öğrencilerin,
+                      akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir.
                     </mark>
                     <p class="text-light">öğrencilerin,
                     akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
-                    etkinliğine katılmaları beklenmektedir.</p>
+                    etkinliğine katılmaları beklenmektedir.
+                    öğrencilerin,in ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir.
+                    El Cezeri İnovasyon ve Proje Pazarı (UCİP) bilimsel
+                    etkinliği yine Siirt Üniversitesi ev sahipliğinde yapılacaktır.
+                    Bu bağlamda başta bölge üniversiteleri olmak üzere Türkiyedeki
+                  tüm üniversiteler ve yurtdışındaki üniversitelerden öğrencilerin,
+                    akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                  etkinliğine katılmaları beklenmektedir.
+                    akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir.
+                    öğrencilerin,
+                    akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir. 
+                    öğrencilerin,
+                    akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir.
+                    öğrencilerin,
+                    akademisyenlerin ve inovasyon ile uğraşan kişilerin/takımların UCİP
+                    etkinliğine katılmaları beklenmektedir.
+                  </p>
 
 
                   </div>
                   <div class="col-md-1"></div>
                 </div>
 
-                <!-- HİZMETLERİMİZ -->
-                <div class="row" style="padding:2vw;">
-                    <div class="col-sm-3"style="padding-left:1vw">
-                      <h2 class="   font-weight-bold p-3 border border-warner border-right-0 border-left-0" >
-                        <div class="hover1">
-                            <mark class="Mark">Hizmetlerimiz : </mark>
-                        </div>
-                        <div class="hover2">
-                            <p style="font-size:15px; color:#fff; text-align:right; ">  <mark class="Mark2" >   Ne yapabiliriz ... </mark ></p>
-                        </div>
-                      </h2>
-                    </div> 
-          
-                    <div class="col-sm-9 ">
-                      <center>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <a href="">
-                            <div class="custom-card-hizmet">
-                              <h5 style="padding-top: 10px; color: white">Robotic ve Sibernetic </h5>
-                              <hr style=" width: 40%">
-                              <p class="text-muted" style="font-size:15px">İNSANSI ROBOTLAR - ROBOT KOLLARI - KARTEZYEN ROBOTLAR</p>
-                            </div>
-                            </a>
-                          </div>
-                          
-                          <div class="col-md-4">
-                            <a href="">
-                            <div class="custom-card-hizmet">
-                              <h5 style="padding-top: 10px; color: white">Hassas Tarım Uygulamaları</h5>
-                              <hr style="  width: 40%">
-                              <p class="text-muted" style="font-size:15px">GIDA GÜVENLİĞİ - HİPERSPEKTRAL GÖRÜNTÜLEME - TAHRİBATSIZ MUAYENE</p>
-                            </div>
-                            </a>
-                          </div>
-                          <div class="col-md-4">
-                            <a href="">
-                            <div class="custom-card-hizmet">
-                              <h5 style="padding-top: 10px; color: white">3D Prototipleme</h5>
-                              <hr style=" width: 40%">
-                              <p class="text-muted" style="font-size:15px">3D MODELLEME - 3D YAZICI - MAKİNE VE SİSTEM TASARIMI</p>
-                            </div>
-                            </a>
-                          </div>
-                        </div>
-                      </center>
-                      <hr class="featurette-divider">
-                    </div>
-          
-                </div> 
+                
             </div>
 
         </div>
       </div>
-      <div class="referanslar" >
+      <div id="Servisler" class="Servisler" style="padding:2vw;">
+        <div class="row">
+            <div class="col-sm-3"style="margin:0 auto; padding-left:1vw">
+                <h2 class="   font-weight-bold p-1 border border-warner border-right-0 border-left-0" >
+                  <div class="hover1">
+                      Hizmetlerimiz : 
+                  </div>
+                  <div class="hover2">
+                      <p style="font-size:15px; color:#fff; text-align:right; ">  <mark class="Mark2" >   Ne yapabiliriz ... </mark ></p>
+                  </div>
+                </h2>
+            </div> 
+        </div>
+          
+        <div class="row" style="padding: 6vh">
+            <div class="col-sm-9 " style="margin: 0 auto;">
+                <center>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="">
+                      <div class="custom-card-hizmet">
+                        <img src="foto/icons/icons8-gradient-line-64.png" alt="">
+                        <h5 style="padding-top: 10px; color: rgb(0, 0, 0)"> <b> Robotic ve Sibernetic </b></h5>
+                        <hr style=" width: 40%">
+                        <p class="text-muted" style="font-size:15px">İNSANSI ROBOTLAR - ROBOT KOLLARI - KARTEZYEN ROBOTLAR</p>
+                      </div>
+                      </a>
+                    </div>
+                    
+                    <div class="col-md-4">
+                      <a href="">
+                      <div class="custom-card-hizmet">
+                          <img src="foto/icons/icons8-palm-scan-64.png" alt="">
+                        <h5 style="padding-top: 10px; color: rgb(0, 0, 0)"> <b> Hassas Tarım Uygulamaları </b></h5>
+                        <hr style="  width: 40%">
+                        <p class="text-muted" style="font-size:15px">GIDA GÜVENLİĞİ - HİPERSPEKTRAL GÖRÜNTÜLEME - TAHRİBATSIZ MUAYENE</p>
+                      </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="">
+                      <div class="custom-card-hizmet">
+                          <img src="foto/icons/icons8-3d-model-64.png" alt="">
+                        <h5 style="padding-top: 10px; color: rgb(0, 0, 0)"><b>3D Prototipleme</b> </h5>
+                        <hr style=" width: 40%">
+                        <p class="text-muted" style="font-size:15px">3D MODELLEME - 3D YAZICI - MAKİNE VE SİSTEM TASARIMI</p>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </center>
+                <hr class="featurette-divider">
+              </div>
+    
+        </div>
+          
+      </div> 
+      <div class="referanslar"  data-aos="fade-down">
           <div class="row" style="padding-top:2vh;">
               <div class="col-sm-4"></div>
               <div class="col-sm-4">
@@ -508,7 +554,7 @@
             </div>
           </div>
           
-          <div class="row">
+          <div class="row" data-aos="flip-left">
               <div class="col-sm-7" style=" margin: 2vh auto;  " >
                 <div class="dikdortgen" >
                     <div class="container text-center">
@@ -559,7 +605,7 @@
            
             
       </div>
-      <div class="SonHaber" >
+      <div class="SonHaber" data-aos="fade-down" >
           <div class="row" style="padding-top:2vh;">
               <div class="col-sm-4"></div>
               <div class="col-sm-4">
@@ -569,21 +615,20 @@
               <div class="col-sm-4"></div>
           </div>
           <div class="row">
-              <div class="col-sm-7"> 
-                  <div class="dikdortgen2">
+              <div class="col-sm-7" > 
+                  <div class="dikdortgen-project" data-aos="fade-up-right">
                     <div class="row">
                       <div style="padding-left:2vw;">
                           <h2 class="font-weight-bold " >
                              <mark class="Mark">Duyurular : </mark> 
                              <div class="hover2">
-                              <p style="font-size:15px; color:#fff; text-align:right; ">  <mark class="Mark2" >   Na Yaptık ... </mark ></p>
                              </div>
-                        </h2>
+                          </h2>
                       </div>
                     </div>
                     
                     <div class="row">
-                      <div class="col-sm-10" style="margin: 0 auto;">
+                      <div class="col-sm-10" style="margin: 0 auto;"> 
                         <div class="list-group-flush">
                             <a href="#!" class="list-group-item list-group-item-action flex-column align-items-start ">
                               <div class="d-flex w-100 justify-content-between">
@@ -612,74 +657,79 @@
                   </div>
                 </div>
               <div class="col-sm-5" style="margin: auto 0" >
-                <div class="dikdortgen">
+                <div class="dikdortgen-project" data-aos="fade-up-left" style="transition-duration: 1000ms;">
                     <div class="row">
                         <div style="padding-left:2vw;">
                             <h2 class="font-weight-bold  " >
                               <mark class="Mark">Son Haberler : </mark> 
                               <div class="hover2">
-                                <p style="font-size:15px; color:#fff; text-align:right; ">  <mark class="Mark2" >   Na Yaptık ... </mark ></p>
                               </div>
                           </h2>
                         </div>
                       </div>
                     <div class="container text-center">
                         <div class="row">
-                          <div class="carousel  slide " id="carousel-testimonials-02" data-ride="carousel">
-                            <div class="carousel-inner">
+                            <div class="carousel  slide " id="carousel-testimonials-04" data-ride="carousel">
+                                <ol class="carousel-indicators" style="position: absolute;bottom: 36vh;margin: 0 0 10px 0;left: 30vw;right: 0;width: auto;">
+                                    <li data-target="#carousel-testimonials-04" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-testimonials-04" data-slide-to="1"></li>
+                                    <li data-target="#carousel-testimonials-04" data-slide-to="2"></li>
+                                  </ol>
+                            <div class="carousel-inner" role="listbox">
                               <div class="carousel-item active"> 
-                                <div style=" ">
+                                <a href="Haberler/1/1.html" target="_blank">
                                     <div class="card mb-3" style="max-width: 540px; ">
                                         <div class="row no-gutters">
-                                          <div class="col-md-5">
-                                            <img src="foto/back2.jpg" class="card-img" alt="...">
+                                          <div class="col-md-5" style="margin: auto auto;">
+                                            <img src="Haberler/1/siirt-universitesi-arge-fuarinda-2.jpeg" class="card-img" alt="...">
                                           </div>
                                           <div class="col-md-7">
                                             <div class="card-body">
-                                              <h5 class="card-title">Card title</h5>
-                                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                              <h5 class="card-title">Ar-Ge İşbirlikleri Zirvesi ve Fuarı’na katıldı</h5>
+                                              <p class="card-text">El-Cezeri Sibernetik laboratuvarında geliştirilen projelerle üniversitemiz, Ar-Ge Merkezleri Fuarında yerini aldı....</p>
+                                              <p class="card-text"><small class="text-muted">15-06-2019</small></p>
                                             </div>
                                           </div>
                                         </div>
-                                      </div>
-                                </div>
+                                    </div>
+                                </a>
                               </div>
                               <div class="carousel-item">
-                                  <div style=" ">
+                                  <a href="Haberler/Elcezeri inovasyon 2016/2.html" target="_blank">
                                       <div class="card mb-3" style="max-width: 540px;">
                                           <div class="row no-gutters">
-                                            <div class="col-md-5">
-                                              <img src="foto/back3.jpg" class="card-img" alt="...">
+                                            <div class="col-md-5" style="margin: auto auto;">
+                                              <img src="Haberler/Elcezeri inovasyon 2016/siirt-universitesi-inovasyon-gunleri-48.jpg" class="card-img" alt="...">
                                             </div>
                                             <div class="col-md-7">
                                               <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                <h5 class="card-title">Siirt Üniversitesi Uluslararası El – Cezeri İnovasyon Günleri</h5>
+                                                <p class="card-text">Siirt Üniversitesi Kezer Yerleşkesi Mimarlık Mühendislik Fakültesinde ‘’1. Uluslararası El – Cezeri İnovasyon Günleri ’’ etkinliği yapıldı...</p>
+                                                <p class="card-text"><small class="text-muted">05-07-2016</small></p>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
-                                  </div>
+                                  </a>
                               </div>
                               <div class="carousel-item">
-                                  <div style=" ">
+                                  <a href="Haberler/Bilgisayar Destekli Fıstık Sınıflandırma Makinesi/3.html" target="_blank">
                                       <div class="card mb-3" style="max-width: 540px;">
                                           <div class="row no-gutters">
-                                            <div class="col-md-5">
-                                              <img src="foto/back1.jpg" class="card-img" alt="...">
+                                            <div class="col-md-5" style="margin: auto auto;">
+                                              <img src="Haberler/Bilgisayar Destekli Fıstık Sınıflandırma Makinesi/el-cezeri-ekibi-harran-teknopark-odul-aldi-6.jpg" class="card-img" alt="...">
                                             </div>
                                             <div class="col-md-7">
                                               <div class="card-body">
-                                                <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                <h5 class="card-title">Ar-Ge Proje Pazarı’ndan Ödülle Döndü</h5>
+                                                <p class="card-text">Harran Üniversitesinde “1.Harran Uluslararası Ar-Ge Proje Pazarı ” düzenlendi.
+                                                    Şanlıurfa Teknokent’de düzenlenen Harran I. Uluslararası AR-GE Proje </p>
+                                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                               </div>
                                             </div>
                                           </div>
                                         </div>
-                                  </div>
+                                  </a>
                               </div>
                             </div>
                           </div>
@@ -699,7 +749,7 @@
            
             
       </div>
-      <div class="iletişim" >
+      <div id="iletisim" class="iletişim" data-aos="fade-down" >
           <div class="row" style="padding-top:2vh;">
               <div class="col-sm-4"></div>
               <div class="col-sm-4">
@@ -711,37 +761,138 @@
           <div class="row">
             <div class="col-sm-12" style="margin: 0 auto">
                 <div class="dikdortgen"  >
-                    <div class="row">
-                      <!--iletişim Formu-->
-                      
-                      <!--finish of iletişim formu-->
-                      <div class="col-sm-4" style="padding: 1vw">
-                        <div class="row" style="padding-left: 5vw;padding-right: 5vw;"> 
+                    <div class="row" style="padding-left: 1vw; ">
+                        <h5 class="font-weight-bold" style="transform: rotate(7deg)" >
+                            <mark class="Mark">İletişim Bilgileri : </mark>  
+                        </h5>
+                    </div>
+                    
+                    <div class="row"> 
+                      <div class="col-sm-5" style="padding: 1vw">
+                        <!--<div class="row" style="padding-left: 5vw;padding-right: 5vw;"> 
                           <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="212" id="gmap_canvas" src="https://maps.google.com/maps?q=siirt%20%C3%BCniversitesi%20kezer%20yerle%C5%9Fkesi%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/best-wordpress-themes/">best wordpress themes</a></div><style>.mapouter{position:relative;text-align:right;height:212px;width:500px;}.gmap_canvas {overflow:hidden;background:none!important;height:212px;width:500px;}</style></div> 
-                      </div>
-                      <div class="row" style="padding-left:4vw; padding-right: 4vw; padding-top: 3vh">
-                      <ul class="list-group list-unstyled" style="padding-left:3vw">
-                        <li  ><p style="font-size: small">  <i class="fas fa-map-marker-alt"></i> <strong class="font-weight-bold"> Türkiye/Siirt </strong> Siirt Üniversitesi, Mühendislik Fakültesi, C-Blok</p></li>
-                        <li  ><p style="font-size: small">  <i class="fas fa-map-marker-alt"></i> <strong class="font-weight-bold">Türkiye/Van </strong>  Cezerilab Bilişim Teknolojileri Makina Sanayi Ticaret Limited Şirketi Şirket Adresi: Bardakçı Mahallesi, Teknokent Sokak, 1,21 Tuşba VAN</p></li>
-                        <li  ><p style="font-size: small">  <i class="fas fa-phone"></i><strong class="font-weight-bold"> Tel: +90 532 590 80 01 </strong> </p></li>
-                        <li  ><p style="font-size: small">  <i class="fas fa-envelope"></i><strong class="font-weight-bold"> E-mail : hakmesyo@gmail.com</strong> </p></li>
-                      </ul>
-                      
-                      </div>
+                        </div>
+                        -->
+                        <div class="row" style="  padding-right: 4vw; padding-top: 3vh">
+                          <ul class="list-group list-unstyled"   >
+                              <li> 
+                                <div class=" " style=" padding-left: 8vw"> 
+                                  <div class="row">
+                                    <div class="col-sm-2" style="font-size: 2.5vw">
+                                      <i class="fas fa-map-marker-alt " style="  padding-left: 2vw"></i> 
+                                    </div>
+                                    <div class="col-sm-10" style="padding-left: 2vw; padding-top: 1vw;">
+                                      <strong class="font-weight-bold"> Türkiye/Siirt </strong>
+                                      <p style="font-size: small">  Siirt Üniversitesi, Mühendislik Fakültesi, C-Blok</p>
+                                    </div>
+                                  </div>
+                                </div> 
+                                <div class="" style="padding-left: 8vw"> 
+                                    <div class="row">
+                                      <div class="col-sm-2" style="font-size: 2.5vw">
+                                        <i class="fas fa-map-marker-alt " style="  padding-left: 2vw"></i> 
+                                      </div>
+                                      <div class="col-sm-10" style="padding-left: 2vw; padding-top: 1vw;">
+                                        <strong class="font-weight-bold"> Türkiye/Van </strong>
+                                        <p style="font-size: small">   Cezerilab Bilişim Teknolojileri Makina Sanayi Ticaret Limited Şirketi Şirket Adresi: Bardakçı Mahallesi, Teknokent Sokak, 1,21 Tuşba VAN</p>
+                                      </div>
+                                    </div>
+                                </div>  
+                            </li> 
+                             <li  >
+                              <div class=" " style="padding-left: 8vw"> 
+                                  <div class="row">
+                                    <div class="col-sm-2" style="font-size: 2.5vw" >
+                                      <i class="fas fa-envelope " style="padding-left: 2vw;  " ></i> 
+                                    </div>
+                                    <div class="col-sm-10 animi" style="padding-left: 2vw; padding-top: 1vw;">
+                                      <strong class="font-weight-bold" style="font-size: 2.5vh"> E-mail : hakmesyo@gmail.com </strong> 
+                                    </div>
+                                  </div>
+                              </div>
+                            </li>
+                            <li  >
+                                <div class="" style="padding-left: 8vw"> 
+                                    <div class="row">
+                                      <div class="col-sm-2" style="font-size: 2.5vw" >
+                                        <i class="fas fa-mobile " style="padding-left: 2vw;" ></i> 
+                                      </div>
+                                      <div class="col-sm-10" style="padding-left: 2vw; padding-top: 1vw;">
+                                         <strong class="font-weight-bold" style="font-size: 2.5vh"> Tel: +90 532 590 80 01 </strong> 
+                                      </div>
+                                    </div>
+                                </div>
+                            </li>
+                              
+                         </ul>
+                        </div>
                         
                       </div>
+                      <!--iletişim Formu-->
+                      <div class="col-sm-7" style="padding: 1vw">
+                        <div class="dikdortgen-project">
+                            <div class="row" >
+                                <h5 class="font-weight-bold" style="transform: rotate(7deg)" >
+                                    <mark class="Mark">İletişim Formu : </mark>  
+                                 </h5>
+                            </div>
+                           <div class="row" style="padding: 4vh">
+                              <div class="row">
+                                  <form> 
+                                      <div class="box" >
+                                      <select class="" id="inputGroupSelect01">
+                                          <option selected>Konu Seç ...</option>
+                                          <option value="1">Öneri</option>
+                                          <option value="2">Sipariş</option>
+                                          <option value="3">Bildiri</option>
+                                          <option value="3">başka</option>
+                                        </select>
+                                        </div>
+                                      <input type="text" id="fname" name="fname" placeholder="isiminiz..."> 
+                                      <input type="text" id="lname" name="lname" placeholder="E-mail..." >  
+                                      <div style="padding-left: 50px;">
+
+                                      <textarea placeholder="Mesajınız ..." ></textarea>  
+                                      <a style="position: absolute; right: 50px; bottom: 70px" class="btn submit-button " href="#">  G ö n d e r </a>
+                                      </div>
+                                  </form>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                      <!--finish of iletişim formu-->
                     </div>
                  </div>
             </div>
           </div>
-          
+         
 
       </div>
+      <div class="alttakiNavbar scrolled2 fixed-bottom" style="height: 10px;">
+        <div class="row fixed-bottom ayar2" style=" "> 
+          <div class="col-sm-4">
+             <a  style="padding-left: 3vw;" href="#"><img width="17" src="foto/icons/facebook1.png" alt="facebook"></a>
+             <a  style="padding-left: 3vw;" href="#"><img width="17" src="foto/icons/linkedin.png" alt="facebook"></a>
+             <a  style="padding-left: 3vw;" href="#"><img width="17" src="foto/icons/twitter1.png" alt="facebook"></a>
+             <a  style="padding-left: 3vw;" href="#"><img width="17" src="foto/icons/youtube.png " alt="facebook"></a>
+             <a  style="padding-left: 3vw;" href="#"><img width="17" src="foto/icons/github1.png" alt="facebook"></a> 
+         </div>
+         <div class="col-sm-4"> 
+           <p style="font-size: 2.5vmin; color: rgb(255, 255, 255);font-family: 'Fira Sans', sans-serif;">Copyright © CezeriLab 2019. All Rights Reserved</p>
+         </div> 
+         <div class="col-sm-4">
+           <p style="font-size: 2.5vmin; color: #fff; padding-left:15vw;font-family: 'Shadows Into Light', cursive;">Designed By <a style="color:rgb(119, 117, 255); font-size:20px" href="https://www.linkedin.com/in/25hasanaser/" target="_blank"> Hasan Naser </a></p>
+        </div> 
+     </div>
+      </div>
     
+</div>  
 
-     
 
 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
