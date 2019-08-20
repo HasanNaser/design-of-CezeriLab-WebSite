@@ -77,7 +77,7 @@ li.nav-item{
 }
 
 .main-section{
-    background-image: url('../foto/back3.jpg');
+    background: url('../foto/back3.jpg') no-repeat center center fixed;
     background-color: #fff;
      background-size:cover;
        height: 800px;
