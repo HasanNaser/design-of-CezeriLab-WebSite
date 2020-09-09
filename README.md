@@ -17,5 +17,7 @@ Araçlar ve kütüphaneler :<br>
 
 Kullanılan kütüphaneler CDN bağlantısı olarak projeye dâhil edilmiştir.<br><br>
 
+https://hasannaser.github.io/design-of-CezeriLab-WebSite/cezeriLAB/Home.html
+
 demo görünüm :
 <img src="cezeriLAB/foto/demo2.png" alt="demo view"/>
